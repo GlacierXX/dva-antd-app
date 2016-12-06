@@ -1,0 +1,44 @@
+@import "../index";
+.mainNav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 0 .2rem;
+  height: .5rem;
+  background-color: @dark-grey;
+  z-index: 11;
+  li {
+    position: relative;
+    display: inline-block;
+    line-height: .5rem;
+    a {
+      display: block;
+      color: #fff;
+      height: 100%;
+      font-size: .14rem;
+      padding: 0 .3rem;
+      transition: color .3s;
+      &:hover {
+        color: @theme;
+      }
+      &.active {
+        color: @theme;
+      }
+    }
+    .remind {
+      position: absolute;
+      top: .1rem;
+      right: .08rem;
+      display: block;
+      padding: 0 .05rem;
+      min-width: .08rem;
+      height: .18rem;
+      color: #FFF;
+      line-height: .18rem;
+      text-align: center;
+      background-color: @red;
+      border-radius: .3rem;
+    }
+  }
+}

@@ -1,0 +1,182 @@
+@theme: #1abc9c;
+@grey: #bbc3cb;
+@dark-grey: #34495e;
+@dark-grey-hover: #4e6d8d;
+@default-bg: #ecf0f1;
+@red: #e74c3c;
+@border: #d9d9d9;
+
+:global {
+  * {
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    font-size: 100px;
+    min-width: 1000px;
+    background-color: @default-bg;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+    color: @dark-grey;
+  }
+  #root {
+    font-size: .12rem;
+    height: 100%;
+  }
+  .ant-spin {
+    position: fixed!important;
+  }
+  .controller {
+    width: 100%;
+    height: .6rem;
+    line-height: .6rem;
+    padding: 0 1%;
+    color: @dark-grey;
+    font-size: .25rem;
+    overflow: hidden;
+    .ctlBtn {
+      float: right;
+      font-size: 0;
+    }
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    width: 6rem;
+    z-index: 1001;
+    .RichTextEditor__root___2QXK- {
+      font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+      border-width: 0 0 .01rem;
+      border-radius: 0;
+      .RichTextEditor__editor___1QqIU {
+        font-size: .14rem;
+      }
+      .public-DraftEditor-content {
+        min-height: 2rem;
+      }
+      .EditorToolbar__root___3_Aqz {
+        text-align: center;
+      }
+      .RichTextEditor__paragraph___3NTf9 {
+        margin: 0;
+      }
+    }
+  }
+  .mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+  }
+  .maskContainer {
+    opacity: .7;
+    filter: blur(1px);
+    transition: all .3s cubic-bezier(.78,.14,.15,.86);
+  }
+}
+
+
+
+body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, button, textarea, p, blockquote, table, th, td, menu {
+  margin: 0;
+  padding: 0
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul, ol, menu {
+  list-style: none
+}
+
+fieldset, img {
+  border: none
+}
+
+img, object, select, input, textarea, button {
+  vertical-align: middle
+}
+
+input, textarea, select, address, caption, cite, code, dfn, em, i, b, strong, small, th, var, abbr {
+  font-size: 100%;
+  font-style: normal
+}
+
+caption, th {
+  text-align: left;
+}
+
+article, aside, footer, header, nav, section, figure, figcaption {
+  display: block;
+}
+
+code, kbd, pre, samp, tt {
+  font-family: Consolas, "Courier New", Courier, monospace;
+}
+
+address, cite, dfn, em, var, i {
+  font-style: normal;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+a {
+  color: @dark-grey;
+  text-decoration: none;
+  cursor: pointer;
+  &:link, &:visited, &:active {
+    color: @dark-grey;
+  }
+  &:hover, &:focus {
+    color: @dark-grey;
+    text-decoration: none;
+    outline: none;
+  }
+  &, span, i, em, u, strong, b, p, img, ul, li, div, dd, dt, dl, ol, table, th, td, h1, h2, h3, h4, h5, h6, input, textarea, button, small, select {
+    cursor: pointer;
+  }
+}
+
+abbr[title], acronym[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tc {
+  text-align: center;
+}
+
+.cf:before, .cf:after, .web:before, .web:after, .web_:before, .web_:after {
+  content: "";
+  display: table;
+}
+
+.cf:after, .web:after, .web_:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
