@@ -1,0 +1,22 @@
+{
+  "entry": "src/index.js",
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr",
+        "transform-runtime"
+      ]
+    },
+    "production": {
+      "extraBabelPlugins": [
+        "transform-runtime"
+      ]
+    }
+  },
+  "extraBabelPlugins": [
+    ["import", { "libraryName": "antd", "style": true }]
+  ],
+  "theme": {
+    "@primary-color": "#1ABC9C"
+  }
+}

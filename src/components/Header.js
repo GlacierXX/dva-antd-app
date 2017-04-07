@@ -3,7 +3,7 @@
  */
 import React, { PropTypes } from 'react'
 import { Link } from 'dva/router'
-import styles from './header.less'
+import styles from './Header.less'
 
 function Header() {
   return (
